@@ -16,55 +16,54 @@
   </head>
   <body>
     <a href="/index.html">Index로 이동</a>
-    <h1>테이블 관련 요소</h1>
-    <table>
-      <!-- tr은 행, th는 제목 셀 ==> scope랑 id를 설정해야함 접근성이 좋아야하니까 -->
-      <tr>
-        <th id="name">이름</th>
-        <th id="ko">국어</th>
-        <th id="en">영어</th>
+    <h1 id="table-title">테이블 관련 요소</h1>
+    <table role="table" aria-labelledby="table-title">
+      <tr role="row">
+        <th id="name" role="columnheader" scope="col">이름</th>
+        <th id="ko" role="columnheader" scope="col">국어</th>
+        <th id="en" role="columnheader" scope="col">영어</th>
       </tr>
-      <tr>
-        <th id="hong">홍길동</th>
-        <td headers="hong ko">90</td>
-        <td headers="hong en">80</td>
+      <tr role="row">
+        <th id="hong" role="rowheader" scope="row">홍길동</th>
+        <td headers="hong ko" role="cell">90</td>
+        <td headers="hong en" role="cell">80</td>
       </tr>
-      <tr>
-        <th id="lee">이영희</th>
-        <td headers="lee ko">70</td>
-        <td headers="lee en">100</td>
+      <tr role="row">
+        <th id="lee" role="rowheader" scope="row">이영희</th>
+        <td headers="lee ko" role="cell">70</td>
+        <td headers="lee en" role="cell">100</td>
       </tr>
-      <tr>
-        <th id="avg">평균</th>
-        <td headers="avg ko">80</td>
-        <td headers="avg en">90</td>
+      <tr role="row">
+        <th id="avg" role="rowheader" scope="row">평균</th>
+        <td headers="avg ko" role="cell">80</td>
+        <td headers="avg en" role="cell">90</td>
       </tr>
-      <tr>
-        <th scope="row">평균 합계</th>
-        <td colspan="2">170</td>
+      <tr role="row">
+        <th scope="row" role="rowheader">평균 합계</th>
+        <td colspan="2" role="cell">170</td>
       </tr>
     </table>
     <hr />
-    <table>
-      <tr>
-        <th>이름</th>
-        <th>국어</th>
-        <th>영어</th>
+    <table role="table" aria-label="학생 성적 테이블">
+      <tr role="row">
+        <th role="columnheader" scope="col">이름</th>
+        <th role="columnheader" scope="col">국어</th>
+        <th role="columnheader" scope="col">영어</th>
       </tr>
-      <tr>
-        <th>홍길동</th>
-        <td>90</td>
-        <td>80</td>
+      <tr role="row">
+        <th role="rowheader" scope="row">홍길동</th>
+        <td role="cell">90</td>
+        <td role="cell">80</td>
       </tr>
-      <tr>
-        <th>이영희</th>
-        <td>70</td>
-        <td>100</td>
+      <tr role="row">
+        <th role="rowheader" scope="row">이영희</th>
+        <td role="cell">70</td>
+        <td role="cell">100</td>
       </tr>
-      <tr>
-        <th>평균</th>
-        <td>80</td>
-        <td>90</td>
+      <tr role="row">
+        <th role="rowheader" scope="row">평균</th>
+        <td role="cell">80</td>
+        <td role="cell">90</td>
       </tr>
     </table>
   </body>
