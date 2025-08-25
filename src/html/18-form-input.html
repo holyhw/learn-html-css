@@ -28,5 +28,70 @@
         <button type="submit">전송</button>
       </fieldset>
     </form>
+    <hr />
+    <form action="https://formspree.io/f/xeqwwbwk" method="post">
+      <fieldset>
+        <legend>사용자 정보</legend>
+        <div>
+          <label for="userId">이름</label>
+          <input required id="userId" type="text" name="name" />
+        </div>
+        <div>
+          <label for="userPwd">비밀번호</label>
+          <input required id="userPwd" type="password" name="password" />
+        </div>
+        <div>
+          <label for="userSearch">검색어</label>
+          <input placeholder="검색어를 입력하세요" id="userSearch" type="search" name="search" />
+        </div>
+        <div>
+          <label for="userTell">전화번호</label>
+          <input type="tel" name="tel" required id="userTell" />
+        </div>
+        <div>
+          <label for="userEmail">이메일</label>
+          <input type="email" name="email" id="userEmail" required />
+        </div>
+        <div>
+          <label for="userEmail">이메일</label>
+          <input type="email" name="email" id="userEmail" required />
+        </div>
+
+        <!-- checkbox : 체크박스 서식 -->
+        <div>
+          <input type="checkbox" checked value="html" name="bootcamp" id="bootcampHtml" />
+          <label for="bootcampHtml">HTML</label>
+        </div>
+        <div>
+          <input type="checkbox" value="css" name="bootcamp" id="bootcampCss" />
+          <label for="bootcampCss">CSS</label>
+        </div>
+
+        <!-- radio : 라디오 서식 -->
+        <!-- 암묵적인 레이블링 : 스크린리더 환경에서의 이슈때문에 권장하지 않음 -->
+        <div>
+          <label>
+            <input type="radio" checked name="classRoom" value="classRoom1" />
+            회고 1팀
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="classRoom" value="classRoom2" />
+            회고 2팀
+          </label>
+        </div>
+
+        <!-- <button type="submit">전송</button>
+        <button type="submit">초기화</button>
+        <button type="submit">버튼</button> -->
+        <!-- 버튼 (전속, 초기화, 일반버튼) -->
+        <div>
+          <input type="submit" value="전송" />
+          <input type="reset" value="초기화" />
+          <input type="button" value="버튼" />
+        </div>
+      </fieldset>
+    </form>
   </body>
 </html>
